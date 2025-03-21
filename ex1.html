@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser Check</title>
+</head>
+<body>
+<h2>Check Your Browser</h2>
+<button onclick="checkBrowser()">Check Browser</button>
+
+<script>
+  function checkBrowser() {
+    let browser = prompt("Enter browser name!");
+
+    switch (browser) {
+      case 'Edge':
+        alert("You've got the Edge!");
+        break;
+      case 'Chrome':
+      case 'Firefox':
+      case 'Safari':
+      case 'Opera':
+        alert('Okay, we support these browsers too');
+        break;
+      default:
+        alert('We hope that this page looks okay!');
+    }
+  }
+</script>
+</body>
+</html>
